@@ -24,16 +24,19 @@
     "use strict";
 
     const dayNumber = +prompt("Введите целое число в интервале от 1 до 32)");
+    let result;
 
     if (Number.isNaN(dayNumber) || dayNumber > 31 || dayNumber <= 0) {
-      console.log("Неверное значение");
+      result = "Неверное значение";
     } else if (dayNumber > 20) {
-      console.log(`Число ${dayNumber} попадает в 3 декаду месяца.`);
+      result = `Число ${dayNumber} попадает в 3 декаду месяца.`;
     } else if (dayNumber > 10) {
-      console.log(`Число ${dayNumber} попадает в 2 декаду месяца.`);
+      result = `Число ${dayNumber} попадает в 2 декаду месяца.`;
     } else if (dayNumber > 0) {
-      console.log(`Число ${dayNumber} попадает в 1 декаду месяца.`);
+      result = `Число ${dayNumber} попадает в 1 декаду месяца.`;
     }
+
+    console.log(result);
   </script>
 </body>
 

@@ -36,8 +36,9 @@
     const hundred = Math.trunc((number % 1000) / 100);
     const ten = Math.trunc((number % 100) / 10);
     const one = Math.trunc((number % 10));
+    const result = `В числе ${number} количество сотен: ${hundred}, десятков: ${ten}, единиц: ${one}`;
 
-    console.log(`В числе ${number} количество сотен: ${hundred}, десятков: ${ten}, единиц: ${one}`);
+    console.log(result);
   </script>
 </body>
 
