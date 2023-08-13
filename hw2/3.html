@@ -28,12 +28,12 @@
 
     if (Number.isNaN(dayNumber) || dayNumber > 31 || dayNumber <= 0) {
       result = "Неверное значение";
-    } else if (dayNumber > 20) {
-      result = `Число ${dayNumber} попадает в 3 декаду месяца.`;
-    } else if (dayNumber > 10) {
-      result = `Число ${dayNumber} попадает в 2 декаду месяца.`;
-    } else if (dayNumber > 0) {
-      result = `Число ${dayNumber} попадает в 1 декаду месяца.`;
+    } else {
+      const decade = (dayNumber === 31) ?
+        Math.floor(dayNumber / 10) :
+        Math.ceil(dayNumber / 10);
+
+      result = `Число ${dayNumber} попадает в ${decade} декаду месяца.`;
     }
 
     console.log(result);
