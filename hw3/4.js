@@ -19,6 +19,6 @@ console.log(sum(2, 6)); должно вывести число 8 в консол
 */
 
 const addition = (a, b) => a + b;
-const difference = (a, b) => (a === b) ? 0 : Math.max(a, b) - Math.min(a, b);
+const difference = (a, b) => Math.max(a, b) - Math.min(a, b);
 const multiplication = (a, b) => a * b;
 const division = (a, b) => a / b;

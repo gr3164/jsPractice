@@ -12,15 +12,15 @@
 const salary = +prompt("Введите размер заработной платы:");
 const taxes = 0.13;
 
-const isValid = (num) => num > 0 && !Number.isNaN(num);
+const isValid = (num) => num > 0 && Number.isFinite(num);
 const salaryAfterTaxes = (salary, taxes) => salary * (1 - taxes);
 
-const printSalaryAfterTaxes = () => {
+const printSalaryAfterTaxes = (salary, taxes) => {
     console.log(
         isValid(salary) ?
             `Размер заработной платы за вычетом налогов равен ${salaryAfterTaxes(salary, taxes)}` :
             "Значение задано неверно"
     );
-}
+};
 
-printSalaryAfterTaxes();
+printSalaryAfterTaxes(salary, taxes);

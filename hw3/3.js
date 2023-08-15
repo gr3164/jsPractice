@@ -10,12 +10,12 @@
 три числа. Проверять их не нужно.
 */
 
-const one = +prompt("Введите число:")
-const two = +prompt("Введите число:")
-const three = +prompt("Введите число:")
+const one = +prompt("Введите число:");
+const two = +prompt("Введите число:");
+const three = +prompt("Введите число:");
 
 const printMaxNumber = (one, two, three) => {
-    console.log(`Максимальное значение среди чисел ${one}, ${two}, ${three} равно ${Math.max(one, two, three)}.`)
-}
+    console.log(`Максимальное значение среди чисел ${one}, ${two}, ${three} равно ${Math.max(one, two, three)}.`);
+};
 
 printMaxNumber(one, two, three);
