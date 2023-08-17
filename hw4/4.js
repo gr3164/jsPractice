@@ -14,7 +14,7 @@ xxxxx
 
 let str = '';
 
-for (let i = 0; i < 21; i++) {
+for (let i = 1; i < 21; i++) {
     str += 'X'.repeat(i) + '\n';
 }
 
