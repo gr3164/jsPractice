@@ -35,18 +35,12 @@ const products = [
 
 
 console.log(
-  products.filter((obj) => {
-    if (Object.hasOwn(obj, 'photos') && obj.photos.length) {
-      return obj;
-    };
-  })
+  products.filter((obj) => Object.hasOwn(obj, 'photos') && obj.photos.length)
 );
 
 
 console.log(
-  products.sort((a, b) => {
-    return a.price - b.price;
-  })
+  products.sort((a, b) => a.price - b.price)
 );
 
 

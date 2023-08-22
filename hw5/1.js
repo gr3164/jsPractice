@@ -19,7 +19,7 @@ const numbers = {
 Object.keys(numbers).forEach(key => {
   if (numbers[key] >= 3) {
     console.log(`${key}: ${numbers[key]}`);
-  };
+  }
 });
 
 
