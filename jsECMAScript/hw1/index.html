@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./hw3DOM.js" defer></script>
+
+    <style>
+        #root {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            gap: 10px;
+            font-size: 25px;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: blanchedalmond;
+            text-align: center;
+        }
+
+        .class1,
+        .class2,
+        .class3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            min-height: 50px;
+            background-color: #b1ad5c;
+            padding: 10px 15px;
+        }
+
+        .class2 {
+            background-color: #5e5373;
+        }
+
+        .class3 {
+            background-color: #18b5a4;
+        }
+
+        .my-class {
+            min-height: 50px;
+            background-color: brown;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <div class="class1">class1</div>
+        <div class="class1">
+            class1
+            <div class="class2">class2</div>
+            <div class="class2">class2</div>
+            <div class="class2">class2
+                <div class="class3">class3</div>
+                <div class="class3">class3</div>
+                <div class="class3">class3</div>
+                <div class="class3">class3
+                    <div class="my-class">my-class</div>
+                </div>
+            </div>
+            <div class="my-class">my-class</div>
+        </div>
+        <div class="class1">class1</div>
+    </div>
+
+</body>
+
+</html>
